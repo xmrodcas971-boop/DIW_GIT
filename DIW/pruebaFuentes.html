@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
+    </style>
+    <style>
+      .pavanam-regular {
+        font-family: "Pavanam", sans-serif; /*estoy usando el link + clase*/
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Martel";
+        src: url("fonts/Martel/Martel-Regular.ttf") format("truetype"); /*format es para q vea q es ttf*/
+        font-weight: normal;
+        font-style: bold;
+        /*este es mediante uso de fichero*/
+      }
+      h3 {
+        font-family: "Martel"; /* Se define el nombre de la fuente*/
+      }
+
+      
+      .hind-madurai-regular {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="pavanam-regular">Prueba con h1</h1>
+    <h3>Prueba con h3</h3>
+    <p class="hind-madurai-regular">Prueba con p</p>
+  </body>
+</html>
