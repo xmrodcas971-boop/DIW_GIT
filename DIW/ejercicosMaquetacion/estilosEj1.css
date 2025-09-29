@@ -1,0 +1,37 @@
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.cv-section {
+  /*lo creo para bloques comunes*/
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+/* A partir de 600px: dos columnas */
+@media (min-width: 600px) and (max-width: 1199px) {
+  .cv-container {
+    flex-direction: row;
+    flex-wrap: wrap; /*las secciones se ajusten en varias filas si no caben en una sola.*/
+  }
+
+  .cv-section {
+    flex: 1 1 45%;
+  }
+  /*cada sección ocupa aproximadamente el 45% del ancho, dejando espacio para dos columnas*/
+}
+
+/* A partir de 1200px: tres columnas */
+@media (min-width: 1200px) {
+  .cv-container {
+    flex-direction: row;
+  }
+
+  .cv-section {
+    flex: 1;
+  }
+  /*cada sección ocupa el mismo espacio, dividiendo el ancho en tres columnas iguales*/
+}
